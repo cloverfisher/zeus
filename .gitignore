@@ -1,1 +1,10 @@
 .DS_Store
+*.classpath
+*.project
+*.settings/*
+/**/*.classpath
+/**/*.project
+/**/*.settings/*
+web/target/*
+client/target/*
+schedule/target/*
