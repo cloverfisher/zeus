@@ -1,0 +1,94 @@
+package com.taobao.zeus.web.platform.client.module.jobdisplay.job;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class JobHistoryModel implements Serializable{
+	private static final long serialVersionUID = 1L;
+
+	private String id;
+	private String jobId;
+	private String name;
+	private String owner;
+	private Date startTime;
+	private Date endTime;
+	private String executeHost;
+	private String status;
+	private String triggerType;
+	private String illustrate;
+	private String operator;
+	private String log;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getJobId() {
+		return jobId;
+	}
+	public void setJobId(String jobId) {
+		this.jobId = jobId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Date getStartTime() {
+		return startTime;
+	}
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
+	}
+	public String getExecuteHost() {
+		return executeHost;
+	}
+	public void setExecuteHost(String executeHost) {
+		this.executeHost = executeHost;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getTriggerType() {
+		return triggerType;
+	}
+	public void setTriggerType(String triggerType) {
+		this.triggerType = triggerType;
+	}
+	public String getIllustrate() {
+		return illustrate;
+	}
+	public void setIllustrate(String illustrate) {
+		this.illustrate = illustrate;
+	}
+	public Date getEndTime() {
+		return endTime;
+	}
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
+	public String getLog() {
+		return log;
+	}
+	public void setLog(String log) {
+		this.log = log;
+	}
+	public String getOperator() {
+		return operator;
+	}
+	public void setOperator(String operator) {
+		this.operator = operator;
+	}
+	public String getOwner() {
+		return owner;
+	}
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+	
+}

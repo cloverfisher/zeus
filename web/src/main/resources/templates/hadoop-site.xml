@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+
+<property>
+  <name>dfs.umask</name>
+  <value>002</value>
+</property>
+
+    <property>
+        <name>hadoop.job.ugi</name>
+        <value>zeus,group,#password</value>
+    </property>
+    <property>
+        <name>mapred.job.queue.name</name>
+        <value>cug-zeus</value>
+    </property>
+    <property>
+        <name>fs.default.name</name>
+        <value>hdfs://hdpnn:9000</value>
+    </property>
+    <property>
+        <name>mapred.job.tracker</name>
+        <value>hdpjt:9001</value>
+    </property>
+
+    <property>
+      <name>dfs.block.size</name>
+      <value>268435456</value>
+      <description>The default block size for new files.</description>
+    </property>
+    <property>
+        <name>mapred.child.java.opts</name>
+        <value>-Xmx2048m</value>
+        <description></description>
+    </property>
+
+    <property>
+      <name>io.sort.record.percent</name>
+      <value>0.1</value>
+      <description></description>
+    </property>
+    <property>
+      <name>io.sort.factor</name>
+      <value>100</value>
+      <description></description>
+    </property>
+
+
+    <property>
+        <name>mapred.map.output.compression.codec</name>
+     <value>org.apache.hadoop.io.compress.LzoCodec</value>
+    </property>
+
+    <property>
+       <name>mapred.output.compression.type</name>
+       <value>BLOCK</value>
+       <description>If the job outputs are to compressed as SequenceFiles, how should
+               they be compressed? Should be one of NONE, RECORD or BLOCK.
+       </description>
+    </property>
+
+    <property>
+      <name>mapred.compress.map.output</name>
+      <value>true</value>
+    </property>
+
+</configuration>
