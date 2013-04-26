@@ -14,7 +14,11 @@ Hadoop任务的自动调度
 
 
  
-宙斯开源，不仅仅是开源技术，更是开源产品  
+####宙斯开源，不仅仅是开源技术，更是开源产品  
+开发中心，一个文档管理的，开发调试的环境，在任务上线前的主要工作区域  
+<a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" /></a>
+调度中心，生产任务的调度环境，当任务调试通过后，在此处配置调度信息进行生产调度  
+<a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-schedule.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-schedule.png" /></a>  
 
 ###使用指南    
 启动步骤：  
