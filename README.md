@@ -8,14 +8,14 @@
 Hadoop MapReduce任务的调试运行  
 Hive任务的调试运行  
 Shell任务的运行    
-Hive员数据的可视化查询与数据预览  
+Hive元数据的可视化查询与数据预览  
 Hadoop任务的自动调度  
 完整的文档管理  
 
 
  
 ####宙斯开源，不仅仅是开源技术，更是开源产品  
-开发中心，一个文档管理的，开发调试的环境，在任务上线前的主要工作区域  
+开发中心，一个文档管理，开发调试的环境，在任务上线前的主要工作区域  
 <a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" /></a>
 调度中心，生产任务的调度环境，当任务调试通过后，在此处配置调度信息进行生产调度  
 <a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-schedule.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-schedule.png" /></a>  
@@ -39,7 +39,7 @@ mvn package
 
 
 以上步骤可以保证这个web项目正常启动，如果需要正式上线此项目，还需要配置以下内容：  
-1.动态膜拜配置  
+1.动态模板配置  
 宙斯系统中有很多模版是可以动态修改的，包括以下一些，建议在正式运行之前都配置好  
 首页展示内容 启动后参见页面指南  
 首页通知内容 启动后参见页面指南  
