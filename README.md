@@ -39,7 +39,11 @@ mvn package
 
 
 以上步骤可以保证这个web项目正常启动，如果需要正式上线此项目，还需要配置以下内容：  
+<<<<<<< HEAD
 1.动态模板配置  
+=======
+1.动态模版配置  
+>>>>>>> change
 宙斯系统中有很多模版是可以动态修改的，包括以下一些，建议在正式运行之前都配置好  
 首页展示内容 启动后参见页面指南  
 首页通知内容 启动后参见页面指南  
@@ -52,6 +56,15 @@ hive 默认udf函数 com.taobao.zeus.jobs.sub.HiveJob实现TODO内容
 (1) web.xml添加一个filter，用来跳转到单点登陆系统  
 (2) Spring容器中添加一个Bean，实现com.taobao.zeus.web.Login.Filter.SSOLogin接口  
 
+<<<<<<< HEAD
 3.配置hadoop相关环境
 默认的hadoop-site.xml和hive-site.xml在 /web/src/main/resources/templates下  
 修改相应的配置以对应相应的hadoop集群  
+=======
+3.配置hadoop相关环境  
+默认的hadoop-site.xml和hive-site.xml在 /web/src/main/resources/templates下   
+修改相应的配置以对应相应的hadoop集群   
+
+4.超级管理员配置
+在com.taobao.zeus.store.Super中进行配置
+>>>>>>> change

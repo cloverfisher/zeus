@@ -5,8 +5,7 @@ import java.util.List;
 
 public class Super {
 
-	private static final List<String> supers = Arrays.asList(
-			"TAOBAO-HZ\\zhoufang", "TAOBAO-HZ\\gufei.wzy");
+	private static final List<String> supers = Arrays.asList("zhoufang");
 
 	public static List<String> getSupers() {
 		return supers;
