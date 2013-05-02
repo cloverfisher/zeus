@@ -20,8 +20,15 @@ Hadoop任务的自动调度
 调度中心，生产任务的调度环境，当任务调试通过后，在此处配置调度信息进行生产调度  
 <a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-schedule.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-schedule.png" /></a>  
 
+###宙斯运行原理
+<a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/graph-network.png" /></a>  
+
+<a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/graph-struct.png" /></a>  
+
+<a href="http://xuhengfei.github.io/assets/images/articles/zeus/snapshot-dev.png" target="_blank"><img src="http://xuhengfei.github.io/assets/images/articles/zeus/graph-workflow.png" /></a>  
+
 ###使用指南    
-启动步骤：  
+快速启动(Quick Start)：  
 1.设置配置项  
 在/web/src/main/filter/antx.properties 中对配置项进行设置  
 设置完成后，复制到${user.home}/antx.properties处  
@@ -39,12 +46,8 @@ mvn package
 
 
 以上步骤可以保证这个web项目正常启动，如果需要正式上线此项目，还需要配置以下内容：  
-<<<<<<< HEAD
 1.动态模板配置  
-=======
-1.动态模版配置  
->>>>>>> change
-宙斯系统中有很多模版是可以动态修改的，包括以下一些，建议在正式运行之前都配置好  
+宙斯系统中有很多模板是可以动态修改的，包括以下一些，建议在正式运行之前都配置好  
 首页展示内容 启动后参见页面指南  
 首页通知内容 启动后参见页面指南  
 hive 默认udf函数 com.taobao.zeus.jobs.sub.HiveJob实现TODO内容  
@@ -56,15 +59,9 @@ hive 默认udf函数 com.taobao.zeus.jobs.sub.HiveJob实现TODO内容
 (1) web.xml添加一个filter，用来跳转到单点登陆系统  
 (2) Spring容器中添加一个Bean，实现com.taobao.zeus.web.Login.Filter.SSOLogin接口  
 
-<<<<<<< HEAD
 3.配置hadoop相关环境
 默认的hadoop-site.xml和hive-site.xml在 /web/src/main/resources/templates下  
-修改相应的配置以对应相应的hadoop集群  
-=======
-3.配置hadoop相关环境  
-默认的hadoop-site.xml和hive-site.xml在 /web/src/main/resources/templates下   
-修改相应的配置以对应相应的hadoop集群   
+修改相应的配置以对应相应的hadoop集群    
 
 4.超级管理员配置
 在com.taobao.zeus.store.Super中进行配置
->>>>>>> change
